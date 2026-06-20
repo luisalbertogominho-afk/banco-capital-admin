@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Banco Capital</title>
+    <style>
+        body{
+            font-family: Arial;
+            background:#0f172a;
+            color:white;
+            margin:0;
+        }
+
+        header{
+            background:#111827;
+            padding:20px;
+            text-align:center;
+            color:#fbbf24;
+            font-size:22px;
+        }
+
+        .container{
+            padding:20px;
+        }
+
+        .card{
+            background:#1e293b;
+            padding:15px;
+            margin:10px 0;
+            border-radius:10px;
+        }
+
+        input, button{
+            width:100%;
+            padding:10px;
+            margin:5px 0;
+            border:none;
+            border-radius:8px;
+        }
+
+        button{
+            background:#fbbf24;
+            font-weight:bold;
+            cursor:pointer;
+        }
+
+        button:hover{
+            opacity:0.9;
+        }
+
+        ul{
+            list-style:none;
+            padding:0;
+        }
+
+        li{
+            padding:5px;
+            border-bottom:1px solid #334155;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    👑 PAINEL ADMIN - BANCO CAPITAL
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h3>👥 Usuários</h3>
+        <ul id="users"></ul>
+    </div>
+
+    <div class="card">
+        <h3>💸 Dar dinheiro</h3>
+        <input id="user" placeholder="Usuário">
+        <input id="value" type="number" placeholder="Valor">
+        <button onclick="giveMoney()">Enviar</button>
+    </div>
+
+    <div class="card">
+        <h3>📈 Pedidos de Empréstimo</h3>
+        <ul id="loans"></ul>
+    </div>
+
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>
